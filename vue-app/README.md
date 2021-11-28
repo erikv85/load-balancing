@@ -1,3 +1,5 @@
+# Implementation of app by Tania Rascia: https://www.taniarascia.com/getting-started-with-vue/
+
 # vue-app
 
 ## Project setup
