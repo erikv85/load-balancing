@@ -15,6 +15,14 @@ services:
     networks:
       - huongdanjava
 
+  dockerize-vuejs-app-1:
+    image: dockerize-vuejs-app
+    container_name: dockerize-vuejs-app-1
+    ports:
+      - 7080:7080
+    networks:
+      - huongdanjava
+
   nginx:
     image: nginx:0.0.1
     ports:
