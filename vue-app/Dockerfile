@@ -18,3 +18,5 @@ RUN npm run build
 
 EXPOSE 7080
 CMD [ "http-server", "-p 7080", "dist" ]
+
+# FIXME: after running and killing, app becomes available on port 8080
