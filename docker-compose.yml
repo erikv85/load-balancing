@@ -3,31 +3,31 @@ services:
     image: spring-boot-docker-compose
     container_name: spring_boot_docker_compose_1
     ports:
-      - 8081:8080
-    networks:
-      - huongdanjava
+      - 8080:8080
+    #networks:
+    #  - huongdanjava
 
-  spring_boot_docker_compose_2:
-    image: spring-boot-docker-compose
-    container_name: spring_boot_docker_compose_2
-    ports:
-      - 8082:8080
-    networks:
-      - huongdanjava
+  #spring_boot_docker_compose_2:
+  #  image: spring-boot-docker-compose
+  #  container_name: spring_boot_docker_compose_2
+  #  ports:
+  #    - 8082:8080
+  #  networks:
+  #    - huongdanjava
 
   dockerize-vuejs-app-1:
     image: dockerize-vuejs-app
     container_name: dockerize-vuejs-app-1
     ports:
       - 7080:7080
-    networks:
-      - huongdanjava
+    #networks:
+    #  - huongdanjava
 
-  nginx:
-    image: nginx:0.0.1
-    ports:
-      - 80:80
+  #nginx:
+  #  image: nginx:0.0.1
+  #  ports:
+  #    - 80:80
 
-networks:
-  huongdanjava:
-    driver: bridge
+#networks:
+#  huongdanjava:
+#    driver: bridge

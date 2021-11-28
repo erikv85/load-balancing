@@ -5,7 +5,7 @@
 #
 # How to run:
 
-docker build -t nginx:0.0.1 .
+#docker build -t nginx:0.0.1 .
 (cd ctrler && mvn clean package -DskipTests && docker build -t spring-boot-docker-compose .)
 (cd vue-app && docker build -t dockerize-vuejs-app .)
 docker-compose up
