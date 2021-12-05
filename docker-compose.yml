@@ -1,5 +1,6 @@
 services:
   spring_boot_docker_compose_1:
+    build: ./ctrler
     image: spring-boot-docker-compose
     container_name: spring_boot_docker_compose_1
     ports:
@@ -8,6 +9,7 @@ services:
       - mongo
 
   dockerize-vuejs-app-1:
+    build: ./vue-app
     image: dockerize-vuejs-app
     container_name: dockerize-vuejs-app-1
     ports:
