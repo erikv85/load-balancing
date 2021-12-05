@@ -30,6 +30,12 @@ public class DemoApplication {
     }
 
     @CrossOrigin(originPatterns = "http://localhost:7080")
+    @GetMapping("/all")
+    public List<Employee> all() {
+        return repository.findAll();
+    }
+
+    @CrossOrigin(originPatterns = "http://localhost:7080")
     @PostMapping("/new")
     public void newEmployee(@RequestBody Employee employee) {
         repository.save(employee);

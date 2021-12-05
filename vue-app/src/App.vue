@@ -34,7 +34,7 @@
         methods: {
             async getEmployees() {
                 try {
-                    const response0 = await axios.get('https://jsonplaceholder.typicode.com/users')
+                    const response0 = await axios.get('http://localhost:8080/all')
                     this.employees = response0.data
                 } catch (error) {
                     console.error(error)
@@ -52,6 +52,7 @@
                 const id = lastId + 1;
                 const newEmployee = { ...employee, id };
                 this.employees = [...this.employees, newEmployee ]
+                axios.post('http://localhost:8080/new', newEmployee)
             },
             deleteEmployee(id) {
                 this.employees = this.employees.filter(
