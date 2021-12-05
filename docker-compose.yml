@@ -4,29 +4,17 @@ services:
     container_name: spring_boot_docker_compose_1
     ports:
       - 8080:8080
-    links:
-      - mongo
     depends_on:
       - mongo
-    networks:
-      - shared-net
 
   dockerize-vuejs-app-1:
     image: dockerize-vuejs-app
     container_name: dockerize-vuejs-app-1
     ports:
       - 7080:7080
-    networks:
-      - shared-net
 
   mongo:
     image: mongo
     ports:
       - 27017:27017
     container_name: mongo
-    networks:
-      - shared-net
-
-networks:
-  shared-net:
-    driver: bridge
