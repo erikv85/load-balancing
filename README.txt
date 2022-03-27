@@ -7,6 +7,7 @@
 
 #docker build -t nginx:0.0.1 .
 mvn -f ctrler clean package -DskipTests
+npm --prefix vue-app install
 docker-compose up
 
 # Then try:
