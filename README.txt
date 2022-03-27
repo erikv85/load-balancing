@@ -6,7 +6,7 @@
 # How to run:
 
 #docker build -t nginx:0.0.1 .
-#mvn -f ctrler clean package -DskipTests
+mvn -f ctrler clean package -DskipTests
 docker-compose up
 
 # Then try:
