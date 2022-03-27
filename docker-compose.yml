@@ -8,10 +8,10 @@ services:
     depends_on:
       - mongo
 
-  dockerize-vuejs-app-1:
-    build: ./vue-app
-    image: dockerize-vuejs-app
-    container_name: dockerize-vuejs-app-1
+  dockerize-vuejs-app-2:
+    build: ./vue-app2
+    image: dockerize-vuejs-app2
+    container_name: dockerize-vuejs-app-2
     ports:
       - 7080:7080
 

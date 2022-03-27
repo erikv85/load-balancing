@@ -30,7 +30,7 @@ RUN npm config set fetch-retry-mintimeout 2000000
 RUN npm config set fetch-retry-maxtimeout 12000000
 RUN npm install -g http-server
 #RUN npm install chokidar@2.1.8
-RUN npm install --loglevel verbose
+#RUN npm install --loglevel verbose
 
 COPY . .
 

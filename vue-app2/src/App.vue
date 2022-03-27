@@ -11,7 +11,8 @@
 </template>
 
 <script>
-    const axios = require('axios')
+    //const axios = require('axios')
+    import axios from 'axios'
     import EmployeeTable from '@/components/EmployeeTable.vue'
     import EmployeeForm from '@/components/EmployeeForm.vue'
 
